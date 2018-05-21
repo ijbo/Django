@@ -1,0 +1,7 @@
+{% extends "webml/header.html" %}
+{% load staticfiles %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'webml/css/theme.css' %}"  type="text/css">
+<h1>{{learningpost.headline|safe}}</h1>
+{{learningpost.body|safe|linebreaks}}
+{% endblock %}
